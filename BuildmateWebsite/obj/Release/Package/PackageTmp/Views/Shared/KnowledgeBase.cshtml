@@ -1,0 +1,37 @@
+﻿@model BuildmateWebsite.Controllers.KnowledgeBaseController.ArticleViewData
+@using BuildmateWebsite.Models
+           
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <section class="page-content kb">
+        @RenderBody()
+
+        <aside>
+            <section class="bordered">
+                @Html.Partial("_Categories", Model.KnowledgeCategories)
+            </section>
+
+        
+            <!--section class="bordered">
+            @Html.Partial("_PopularArticles", Model.PopularArticles)
+            </section-->
+
+        
+            <section class="bordered">
+            <h3>Customer Service &amp; Support</h3>
+
+            <p>
+                If you have questions about our system that we haven't answered here please get in touch
+                and we'll do our best to get back to you.
+            </p>
+
+            <p class="alignright">
+                <a class="btn primary" href="mailto:support@buildmateapp.com">Email Support</a>
+            </p>
+            </section>
+        </aside>
+    </section>
+</div>

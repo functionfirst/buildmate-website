@@ -1,0 +1,48 @@
+﻿@model BuildmateWebsite.Controllers.BlogController.BlogViewData
+@using BuildmateWebsite.Models
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <section class="page-content">
+        <!--h1>Stay informed with the latest estimating software news</h1-->
+        @RenderBody()
+
+        <aside>
+            <section class="bordered">
+                <h3>Discover Buildmate</h3>
+
+                <p>Using our estimating software has never been so easy. Sign up for a free 30 day trial!</p>
+
+                <p class="alignright"><a href="https://buildmateapp.com/register/" class="btn primary">Try it FREE</a></p>
+            </section>
+
+            <section class="bordered category-list">
+                <h3>Recent Posts</h3>
+
+                <ul>
+                @foreach (var item in Model.RecentPosts)
+                {
+                    <li>
+                        @Html.ActionLink(item.Title, "Article", "blog", new { id = item.CategoryId, Title = item.Title.ToSeoUrl() }, null)
+                    </li>
+                }
+                </ul>
+            </section>
+
+            <section class="bordered category-list">
+                <h3>Blog Categories</h3>
+
+                <ul>
+                @foreach (var item in Model.BlogCategories)
+                {
+                    <li>
+                        @Html.ActionLink(item.Name, "Category", "blog", new { id = item.BlogCategoryId, Title = item.Name.ToSeoUrl() }, null)
+                    </li>
+                }
+                </ul>
+            </section>
+        </aside>
+    </section>
+</div>

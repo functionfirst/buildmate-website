@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BuildmateWebsite.Models.KnowledgeArticle>
+@using BuildmateWebsite.Models
+
+<h3>Popular Articles</h3>
+
+<ul>
+@foreach (var item in Model)
+{
+    <li>
+        @Html.ActionLink(item.Title, "article", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)
+    </li>
+}
+</ul>
+

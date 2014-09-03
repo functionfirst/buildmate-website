@@ -1,0 +1,14 @@
+﻿@model IEnumerable<BuildmateWebsite.Models.KnowledgeCategory>
+@using BuildmateWebsite.Models
+
+<h3>Categories</h3>
+
+<ul>
+    <li>@Html.ActionLink("Recent Articles", "Index")</li>
+@foreach (var item in Model)
+{
+    <li>
+        @Html.ActionLink(item.Name, "category", new { id = item.KnowledgeCategoryId, Title = item.Name.ToSeoUrl() }, null)
+    </li>
+}
+</ul>

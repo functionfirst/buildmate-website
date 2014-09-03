@@ -1,0 +1,53 @@
+@{
+    Layout = "~/Views/UserMailer/_Layout.cshtml";
+}
+<h2>Project manager - Daily Digest</h2>
+
+<p>Hey <strong>@ViewBag.firstName</strong>,</p>
+
+<p>These are the projects that need your attention:</p>
+
+<table width='100%' cellspacing='0' cellpadding='4' border='0'>
+<thead>
+<tr style="background: #333; color: fff;">
+    <th style="padding: 5px; text-align: left">Project Name</th>
+    <th style="padding: 5px">Return Date</th>
+    <th style="padding: 5px">Status</th>
+</tr>
+</thead>
+<% bodyText %>
+
+@foreach (var item in Model.ProjectNotification)
+{
+<t>r
+    <td width='60%' style='border-bottom: 1px solid #ccc; '>
+        @Html.ActionLink(item.Title, "article", "KnowledgeBase", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)
+        <a href='http://buildmateapp.com/project_details.aspx?pid=" & pid & "'>" & projectName & "</a>
+    </td>
+    <td style='border-bottom: 1px solid #ccc; text-align: center'>@item.returnDate</td>
+    <td style='border-bottom: 1px solid #ccc; text-align: center'>@item.label</td>
+</tr>
+}
+</table>
+
+
+<h2>We've created your account for BuildMate!</h2>
+
+<p>
+    Thanks for registering, we hope you enjoy and benefit from our website.
+</p>
+
+<p>
+    Here are your login details:<br /><br />
+    &nbsp;&bull;&nbsp; <strong>Email:</strong> @ViewBag.user_email<br />
+    &nbsp;&bull;&nbsp; <strong>Password:</strong> @ViewBag.password<br />
+</p>
+                        
+<p>
+    Click <a href='http://buildmateapp.com/settings.aspx'>here</a> to login.</p>
+</p>
+
+<p>
+    All the best!,<br >
+    The BuildMate Team
+</p>

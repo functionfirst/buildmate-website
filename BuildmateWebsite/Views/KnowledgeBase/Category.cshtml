@@ -1,0 +1,19 @@
+﻿@model BuildmateWebsite.Controllers.KnowledgeBaseController.ArticleViewData
+@using BuildmateWebsite.Models
+
+@{
+    ViewBag.Title = @Model.CurrentCategory.Name + " - Knowledge Base - Estimating Software for builders, developers and home enthusiasts";
+    ViewBag.Keywords = @Model.CurrentCategory.Keywords;
+    Layout = "~/Views/Shared/KnowledgeBase.cshtml";
+}
+
+<h2>@Model.CurrentCategory.Name</h2>
+
+<ul>
+@foreach (var item in Model.ArticlesInCategory)
+{
+    <li>
+        @Html.ActionLink(item.Title, "article", "KnowledgeBase", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)
+    </li>
+}
+</ul>
