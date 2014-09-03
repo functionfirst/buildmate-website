@@ -376,13 +376,19 @@ a.darker:hover {
 .features {
     float:left;
     width:200px;
+    border-right: 1px solid #ddd;
+    margin-top: -20px;
+    background: #f5f5f5;
+    
+    -webkit-box-shadow: inset 100px 0 40px -10px #fff;
+    -moz-box-shadow:    inset 100px 0 40px -10px #fff;
+    box-shadow:         inset 100px 0 40px -10px #fff;
 }
 
 .features ul {
     list-style : none;
-    margin: -20px 0 20px;
-    padding: 50px 0 50px;
-    border-right: 1px solid #ddd;
+    /*margin: -20px 0 20px;*/
+    padding: 50px 0 10px;
 }
 .features li {
     border: 1px solid #ddd;
@@ -395,11 +401,6 @@ a.darker:hover {
 .features li > a {
     display: block;
     padding: 4px 8px;
-    background: #f5f5f5;
-    
-    -webkit-box-shadow: inset 30px 0 40px -10px #fff;
-    -moz-box-shadow:    inset 30px 0 40px -10px #fff;
-    box-shadow:         inset 30px 0 40px -10px #fff;
     -webkit-transition: background .2s linear;
     -moz-transition:    background .2s linear;
     transition:         background .2s linear;
@@ -420,6 +421,9 @@ a.darker:hover {
     padding-bottom: 20px;
 }
 
+.customer-service {
+    margin-right: 10px;
+}
 .feature-list h3  {
     margin-top: 0;
     margin-bottom: 6px;
