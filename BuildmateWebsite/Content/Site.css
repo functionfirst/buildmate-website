@@ -687,11 +687,26 @@ input:focus {
     float: left;
     width: 100%;
 }
-.span6 
-{
+.span9,
+.span6,
+.span3 {
     float: left;
+    margin-right: 1%
+}
+.span9 {
+    width: 74%;
+}
+.span6 {
     width: 49%;
-    margin: 0 1% 0 0;
+}
+.span3 {
+    width: 24%;
+}
+
+hr {
+    border: 1px solid #eee;
+    border-width: 1px 0 0;
+    margin: 20px 0;
 }
 
 /* blog */
@@ -706,7 +721,8 @@ input:focus {
     border-bottom: 1px solid #ddd;
 }
 
-    .blog .lead {
+    .lead {
+        margin-top: 0;
         font-size: 21px;
         line-height: 1.6em;
         font-weight: 200;
