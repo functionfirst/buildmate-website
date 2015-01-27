@@ -875,6 +875,6 @@ section ul {
 
 @media (max-width: 1024px) {
   .hero-container {
-    padding: 7em 0 2em;
+    padding: 2em;
   }
 }
