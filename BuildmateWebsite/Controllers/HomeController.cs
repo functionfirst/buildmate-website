@@ -25,10 +25,10 @@ namespace BuildmateWebsite.Controllers
 
         //
         // GET: /Contact/
-        public ActionResult Contact()
-        {
-            return View();
-        }
+        //public ActionResult Contact()
+        //{
+        //    return View();
+        //}
 
         //
         // GET: /Pricing/

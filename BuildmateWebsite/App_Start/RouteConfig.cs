@@ -66,6 +66,12 @@ namespace BuildmateWebsite
                 "Features",
                 new { controller = "Features", action = "Index", id = "", title = "" }
             );
+            // Contact
+            routes.MapRoute(
+                "ContactIndex",
+                "Contact",
+                new { controller = "Contact", action = "Index", id = "", title = "" }
+            );
 
 
             //// signup

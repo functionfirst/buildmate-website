@@ -146,6 +146,7 @@
     <Compile Include="Models\BuildmateEntities.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ViewModels\FeedbackForm.cs" />
     <Compile Include="Models\KnowledgeArticle.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -171,6 +172,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\images\avatars\steve.jpg" />
     <Content Include="Content\images\banner2.jpg" />
+    <Content Include="Content\images\banner3.jpg" />
+    <Content Include="Content\images\banner4.jpg" />
+    <Content Include="Content\images\banner5.jpg" />
+    <Content Include="Content\images\banner6.jpg" />
     <Content Include="Content\images\features.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\logo_white.png" />
@@ -243,11 +248,11 @@
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\Terms.cshtml" />
     <Content Include="Views\Home\whats_new.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="bin\" />
-    <Folder Include="Views\Contact\" />
     <Folder Include="Views\Page\" />
   </ItemGroup>
   <ItemGroup>
@@ -257,7 +262,6 @@
     <Content Include="Views\Blog\Article.cshtml" />
     <Content Include="Views\Blog\Category.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Error\InternalServerError.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Features\cost_analysis.cshtml" />
