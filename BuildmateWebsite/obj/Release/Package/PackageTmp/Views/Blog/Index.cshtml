@@ -2,14 +2,10 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = "The Buildmate Blog- Estimating Software for builders, developers and home enthusiasts";
+    ViewBag.Title = "Estimating Software Blog for builders, developers and home enthusiasts";
     ViewBag.Keywords = "blog, estimating, software, contractors, subcontractors, products, resources, tenders, construction, builders, free, trial, building";
     Layout = "~/Views/Shared/Blog.cshtml";
 }
-
-    <p class="breadcrumb"><a href="/">Home</a> <span class="divider">/</span> Blog</p>
-
-
     <section class="main-panel">
     @foreach (var item in Model.RecentBlogArticles)
     {

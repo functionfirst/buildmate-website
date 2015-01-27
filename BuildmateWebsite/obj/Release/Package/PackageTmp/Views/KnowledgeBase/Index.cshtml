@@ -6,30 +6,13 @@
     ViewBag.Keywords = "estimating, software, knowledge, base, recent, articles, tasks, project, resources, categories, catalogue, documents, projects, subscription, billing, suppliers, buildmate";
     Layout = "~/Views/Shared/KnowledgeBase.cshtml";
 }
+<h2>Recent Articles</h2>
 
-    <p class="breadcrumb"><a href="/">Home</a> <span class="divider">/</span> Knowledge Base</p>
-
-    <section class="main-panel">
-        <div class="search">
-            <h3>Search the Knowledge Base</h3>
-    
-            <form action="/knowledgebase/search/" method="post">
-                <input type="text" name="searchTerm" size="50" />
-                <input type="submit" value="Search" class="btn secondary" />
-                <p>
-                    <small>Search by keywords such as Tasks, Project, Resource, etc.</small>
-                </p>
-            </form>
-        </div>
-
-        <h2>Recent Articles</h2>
-
-        <ol>
-        @foreach (var item in Model.RecentArticles)
-        {
-            <li>
-                @Html.ActionLink(item.Title, "Article", "KnowledgeBase", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)
-            </li>
-        }
-        </ol>
-    </section>
+<ul>
+@foreach (var item in Model.RecentArticles)
+{
+    <li>
+        @Html.ActionLink(item.Title, "Article", "KnowledgeBase", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)
+    </li>
+}
+</ul>

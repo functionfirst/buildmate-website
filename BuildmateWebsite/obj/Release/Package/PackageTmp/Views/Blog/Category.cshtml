@@ -2,17 +2,10 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = @Model.CurrentCategory.Name + " - Blog - Estimating Software for builders, developers and home enthusiasts";
+    ViewBag.Title = @Model.CurrentCategory.Name + " - Estimating Software Blog for builders, developers and home enthusiasts";
     ViewBag.Keywords = @Model.CurrentCategory.Keywords;
     Layout = "~/Views/Shared/Blog.cshtml";
 }
-
-<p class="breadcrumb">
-    <a href="/">Home</a> <span class="divider">/</span>
-    <a href="/blog/">Blog</a> <span class="divider">/</span>
-    @Model.CurrentCategory.Name
-</p>
-
 <section class="blog main-panel">
     <h1>@Model.CurrentCategory.Name</h1>
 

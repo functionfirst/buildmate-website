@@ -2,7 +2,7 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = @Html.DisplayFor(model => Model.Blog.Title);
+    ViewBag.Title = @Html.DisplayFor(model => Model.Blog.Title) + " - Estimating Software Blog for builders, developers and home enthusiasts";
     ViewBag.Keywords = @Model.Blog.Keywords;
     Layout = "~/Views/Shared/Blog.cshtml";
     Page.Title = "Foo";
@@ -19,12 +19,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     } (document, 'script', 'facebook-jssdk'));
     </script>
-
-    <p class="breadcrumb">
-        <a href="/">Home</a> <span class="divider">/</span>
-        <a href="/blog/">Blog</a> <span class="divider">/</span>
-        @Html.DisplayFor(model => Model.Blog.Title)
-    </p>
 
     <section class="main-panel">
         <article class="blog">

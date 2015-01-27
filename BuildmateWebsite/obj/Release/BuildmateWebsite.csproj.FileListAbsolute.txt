@@ -31,3 +31,4 @@ C:\Users\alan_000\Documents\Visual Studio 2013\Projects\BuildmateWebsite\Buildma
 C:\Users\alan_000\Documents\Visual Studio 2013\Projects\BuildmateWebsite\BuildmateWebsite\bin\System.Web.WebPages.Razor.xml
 C:\Users\alan_000\Documents\Visual Studio 2013\Projects\BuildmateWebsite\BuildmateWebsite\obj\Release\BuildmateWebsite.dll
 C:\Users\alan_000\Documents\Visual Studio 2013\Projects\BuildmateWebsite\BuildmateWebsite\obj\Release\BuildmateWebsite.pdb
+C:\Users\alan_000\Documents\Visual Studio 2013\Projects\BuildmateWebsite\BuildmateWebsite\obj\Release\BuildmateWebsite.csprojResolveAssemblyReference.cache

@@ -21,6 +21,7 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">        window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="content/js/functions.js"></script>
 </head>
 
 <body class="@RenderSection("BodyClass", false)">
@@ -32,14 +33,14 @@
                 </h2>
 
                 <ul class="nav">
+                    <li><a href="/">Home</a></li>
                     <li><a href="/features/">Features</a></li>
-                    <li><a href="/plans_and_pricing/">Pricing</a></li>
-                    <li><a href="/knowledgebase/">Help/Support</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="https://buildmateapp.com">Login</a></li>
-                    <li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/knowledgebase/">Knowledge Base</a></li>
+                    <li><a href="https://buildmateapp.com" class="btn primary">Login</a></li>
+                    @*<li>
                         <a href="https://buildmateapp.com/register/" class="btn primary">Try it Free</a>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
         </div>
@@ -50,48 +51,53 @@
     <div class="footer">
         <div class="container">
             <div class="col4">
-                <h3 class="footer-header">Company</h3>
+                <h3 class="footer-header">Product</h3>
                 
                 <ul>
-                    <li><a href="/about/">About</a></li>
+                    <li><a href="/features/">Features</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3 class="footer-header">Community</h3>
+
+                <ul>
+                    <li><a href="/whats_new/">What's New</a></li>
+                    <li><a href="/knowledgebase/">Knowledge Base</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3 class="footer-header">Company</h3>
+
+                <ul>
+                    <li><a href="/about/">About us</a></li>
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
-            </div>
-            <div class="col4">
-                <h3 class="footer-header">Support</h3>
-
-                <ul>
-                    <li><a href="/support/">Support</a></li>
-                    <li><a href="/knowledgebase/">Knowledge Base</a></li>
-                </ul>
-            </div>
-            <div class="col4">
-                <h3 class="footer-header">Support</h3>
-
-                <ul>
-                    <li><a href="/terms/">Terms of service</a></li>
-                    <li><a href="/privacy/">Privacy policy</a></li>
-                    <li><a href="/faq/">FAQ</a></li>
-                </ul>
 
             </div>
             <div class="col4">
-                <h3 class="footer-header">Social</h3>
-
-                <ul>
-                    <li><a href="http://www.facebook.com/getbuildmate/">Facebook</a></li>
-                    <li><a href="http://twitter.com/getbuildmate">Twitter</a></li>
-                    <li><a href="https://plus.google.com/+Getbuildmate" rel="publisher">Google+</a></li>
-                </ul>
+                <a href="https://buildmateapp.com/register/" class="btn btn-large secondary">Try it Free</a>
+                
+                <div class="social">
+                    <a class="social-fb" target="_blank" href="http://www.facebook.com/getbuildmate/">Facebook</a>
+                    <a class="social-tw" target="_blank" href="http://twitter.com/getbuildmate">Twitter</a>
+                    <a class="social-pl" target="_blank" href="https://plus.google.com/+Getbuildmate" rel="publisher">Google+</a>
+                    <a class="social-in" target="_blank" href="http://linkedin.com">LinkedIn</a>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="footer-narrow">
-        <div class="container">
-            <a href="http://www.functionfirst.co.uk" title="developed by functionfirst" class="dev">developed by <strong>function</strong>first</a>
 
-            &copy; Buildmate Software Ltd @DateTime.Now.Year
+            <div class="footer-narrow">
+                <p>
+                    <a href="/terms/">Terms of service</a> &bull;
+                    <a href="/privacy/">Privacy policy</a> &bull;
+                    <a href="/feedback/">Site Feedback</a>
+                </p>
+                <p>
+                    &copy; Buildmate Software Ltd.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -109,6 +115,8 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-501af5c837dcc35f" async></script>
 
     <!-- mouseflow
     <script type="text/javascript">
