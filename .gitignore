@@ -1,5 +1,10 @@
 BuildmateWebsite/bin/
 BuildmateWebsite/obj/
+BuildmateWebsite/Properties/
+BuildmateWebsite/BuildmateWebsite.csproj
+BuildmateWebsite/BuildmateWebsite.csproj.user
 packages/
 BuildmateWebsite.sln
 BuildmateWebsite.v12.suo
+BuildmateWebsite/BuildmateWebsite.csproj
+Thumbs.db
