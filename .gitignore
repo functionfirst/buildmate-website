@@ -1,2 +1,5 @@
 BuildmateWebsite/bin/
 BuildmateWebsite/obj/
+packages/
+BuildmateWebsite.sln
+BuildmateWebsite.v12.suo
