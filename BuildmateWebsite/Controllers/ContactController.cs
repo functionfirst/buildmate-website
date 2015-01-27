@@ -18,6 +18,7 @@ namespace BuildmateWebsite.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            //foo
             ViewBag.success = false;
             ViewBag.error = false;
 
