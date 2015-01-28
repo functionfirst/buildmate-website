@@ -38,7 +38,6 @@ namespace BuildmateWebsite.Controllers
                 StringBuilder message = new StringBuilder();
                 message.Append("Name: " + contactForm.Name + "<br />\n");
                 message.Append("Email Address: " + contactForm.Email + "<br />\n");
-                message.Append("Phone: " + contactForm.Phone + "<br />\n");
 
                 message.Append("Message: " + contactForm.Message);
 

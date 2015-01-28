@@ -9,8 +9,6 @@ namespace BuildmateWebsite.Models
 
         [Required(ErrorMessage = "* Please enter an Email")]
         public string Email { get; set; } 
-
-        public string Phone { get; set; }
         
         [Required(ErrorMessage = "* Please enter a Message")]
         public string Message { get; set; }
