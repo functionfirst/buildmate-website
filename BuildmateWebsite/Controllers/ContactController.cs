@@ -28,7 +28,7 @@ namespace BuildmateWebsite.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(FeedbackForm feedbackForm)
+        public ActionResult Index(ContactForm contactForm)
         {
             ViewBag.success = false;
             ViewBag.error = false;
@@ -36,11 +36,11 @@ namespace BuildmateWebsite.Controllers
             if (ModelState.IsValid)
             {
                 StringBuilder message = new StringBuilder();
-                message.Append("Name: " + feedbackForm.Name + "<br />\n");
-                message.Append("Email Address: " + feedbackForm.Email + "<br />\n");
-                message.Append("Phone: " + feedbackForm.Phone + "<br />\n");
+                message.Append("Name: " + contactForm.Name + "<br />\n");
+                message.Append("Email Address: " + contactForm.Email + "<br />\n");
+                message.Append("Phone: " + contactForm.Phone + "<br />\n");
 
-                message.Append("Message: " + feedbackForm.Message);
+                message.Append("Message: " + contactForm.Message);
 
                 if (SendEmail("alan@functionfirst.co.uk", message))
                 {

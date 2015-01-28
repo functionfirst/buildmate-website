@@ -146,7 +146,7 @@
     <Compile Include="Models\BuildmateEntities.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ViewModels\FeedbackForm.cs" />
+    <Compile Include="ViewModels\ContactForm.cs" />
     <Compile Include="Models\KnowledgeArticle.cs">
       <SubType>Code</SubType>
     </Compile>

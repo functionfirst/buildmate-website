@@ -1,12 +1,8 @@
-﻿//using System;
-//using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-//using System.Linq;
-//using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace BuildmateWebsite.Models
 {
-    public class FeedbackForm
+    public class ContactForm
     {
         [Required(ErrorMessage = "* Please enter a Name")]
         public string Name { get; set; }
