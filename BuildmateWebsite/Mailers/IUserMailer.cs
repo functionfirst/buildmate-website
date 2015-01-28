@@ -9,13 +9,6 @@ namespace BuildmateWebsite.Mailers
 { 
     public interface IUserMailer
     {
-
-        MvcMailMessage Welcome(string user_email, string password);
-
-        MvcMailMessage Confirmation(string user_email);
-
-        MvcMailMessage PasswordReset();
-
         MvcMailMessage NotFound(string url);
 
         MvcMailMessage Error500(Exception ex);

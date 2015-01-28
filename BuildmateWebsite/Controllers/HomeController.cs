@@ -24,13 +24,6 @@ namespace BuildmateWebsite.Controllers
         }
 
         //
-        // GET: /Contact/
-        //public ActionResult Contact()
-        //{
-        //    return View();
-        //}
-
-        //
         // GET: /Pricing/
         public ActionResult Pricing()
         {
@@ -40,20 +33,6 @@ namespace BuildmateWebsite.Controllers
         //
         // GET: /Privacy/
         public ActionResult Privacy()
-        {
-            return View();
-        }
-
-        //
-        // GET: /resources/
-        public ActionResult Resources()
-        {
-            return View();
-        }
-
-        //
-        // GET: /Security/
-        public ActionResult Security()
         {
             return View();
         }

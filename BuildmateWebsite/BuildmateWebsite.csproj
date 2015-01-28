@@ -134,9 +134,6 @@
     </Compile>
     <Compile Include="Mailers\IUserMailer.cs" />
     <Compile Include="Mailers\UserMailer.cs" />
-    <Compile Include="Models\AccountModel.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Models\Blog.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -253,7 +250,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="bin\" />
-    <Folder Include="Views\Page\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -284,12 +280,8 @@
     <Content Include="Views\Shared\_Homepage.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_PopularArticles.cshtml" />
-    <Content Include="Views\UserMailer\Confirmation.cshtml" />
     <Content Include="Views\UserMailer\Error500.cshtml" />
     <Content Include="Views\UserMailer\NotFound.cshtml" />
-    <Content Include="Views\UserMailer\Notification.cshtml" />
-    <Content Include="Views\UserMailer\PasswordReset.cshtml" />
-    <Content Include="Views\UserMailer\Welcome.cshtml" />
     <Content Include="Views\UserMailer\_ErrorLayout.cshtml" />
     <Content Include="Views\UserMailer\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />

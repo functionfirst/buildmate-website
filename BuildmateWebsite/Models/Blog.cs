@@ -32,7 +32,6 @@ namespace BuildmateWebsite.Models
         [StringLength(5000)]
         public string Article { get; set; }
 
-        //[DisplayFormat(DataFormatString = "{0:d, yyyy}")]
         public DateTime DateCreated { get; set; }
         
         public Boolean Hidden { get; set; }
