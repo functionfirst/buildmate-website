@@ -6,7 +6,6 @@
     ViewBag.Keywords = "blog, estimating, software, contractors, subcontractors, products, resources, tenders, construction, builders, free, trial, building";
     Layout = "~/Views/Shared/Blog.cshtml";
 }
-    <section class="main-panel">
     @foreach (var item in Model.RecentBlogArticles)
     {
         <article class="blog">
@@ -28,4 +27,3 @@
             </section>
         </article>
     }
-    </section>

@@ -139,10 +139,19 @@ h3 {
 .intro h1 {
     color: #fff;
 }
+
 .intro p {
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 300;
+}
+
+.intro a {
+    color: #9bc1ec;
+}
+
+.intro a:hover {
+    color: #81abdc;
 }
 .fixed-nav.fixed-nav .header,
 .header {
@@ -335,7 +344,6 @@ body:before {
     padding: 20px 40px;
     text-transform: uppercase;
 }
-
 
 .banner {
     margin-top: 200px;
@@ -647,20 +655,18 @@ a.darker:hover {
     background: url(http://images.getbuildmate.com/pricing_arrow_2.png);
     text-indent: -999em;
 }
-/* help support */
+
+
+/* Knowledge Base */
 .search-box {
-    padding: 10px;
-    margin-bottom: 20px;
-    background: #eee;
-    border-radius: 3px;
+    margin: 20px 0;
 }
-.search-box-input {
+.search-box-input.search-box-input {
     margin: 0;
-    width: 100%;
+    width: 80%;
+    margin-right: 10px;
 }
-    /*.kb .search .btn {
-        padding: 6px 12px;
-    }*/
+
 .kb h1 small {
     color: #999;
     font-size: 11px;
@@ -927,54 +933,56 @@ address {
     margin: 4px 8px;
 }
 
-.main-panel {
-    /*float: left;*/
-    /*width: 640px;*/
-    margin-right: 320px;
-}
 .main-panel h2 {
     margin-top: 0;
 }
 
-.page-content {
-    /*margin-top: 40px;*/
-}
-.page-content aside {
-    float: right;
-    width: 300px;
+.aside-panel {
+    float: left;
+    width: 280px;
 }
 
-section.bordered {
-    /*margin: 0 0 18px;
-    padding: 25px;
-    background: #F4F7FA;
-    border: 1px solid #D7E1E8;
-    -webkit-box-shadow: 0 0 3px #eee;
-       -moz-box-shadow: 0 0 3px #eee;
-            box-shadow: 0 0 3px #eee;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;*/
+.aside-right {
+    float: right;
 }
+
+.aside-panel + .main-panel {
+    margin-left: 320px;
+}
+
+.aside-right + .main-panel {
+    margin-left: 0;
+    margin-right: 320px;
+}
+
+.main-panel article {
+    width: 80%;
+}
+
 .category-list {
     margin-bottom: 20px;
 }
+
 .category-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .category-list li {
     line-height: 18px;
 }
+
 .category-list li + li {
     border-top: 1px solid #ddd;
 }
+
 .category-list a {
     display: block;
     font-size: 13px;
     padding: 8px 16px;
 }
+
 .category-list a:hover {
     background: #f5f5f5;
 }

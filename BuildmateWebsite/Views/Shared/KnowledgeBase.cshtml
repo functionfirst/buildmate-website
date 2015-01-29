@@ -7,16 +7,26 @@
 
 <div class="intro">
     <div class="container">
-        <h1>Knowledge Base</h1>
+        <p>Knowledge Base</p>
 
-        <p>Helpful articles and tips for getting started with Buildmate</p>
+        <h1>How can we help?</h1>
+
+        <div class="search-box">
+            <form action="/knowledgebase/search/" method="post">
+                <input type="text" name="searchTerm" size="50" class="search-box-input" placeholder="Search the Knowledge Base.." />
+                <input type="submit" name="name" value="Search" class="btn" />
+            </form>
+        </div>
+        <p>Couldn't find what you were looking for? @Html.ActionLink("Contact Us", "", "contact")</p>
     </div>
 </div>
 
 <div class="content">
     <div class="container">
-        <div class="features">
-            <section>
+        <aside class="aside-panel">
+            <section class="category-list">
+                <h3>Categories</h3>
+
                 @Html.Partial("_Categories", Model.KnowledgeCategories)
             </section>
 
@@ -32,17 +42,10 @@
                     <a class="btn primary" href="/contact">Contact Us</a>
                 </p>
             </section>
-        </div>
+        </aside>
 
-        <div class="feature-content">
-            <div class="search-box">
-                <form action="/knowledgebase/search/" method="post">
-                    <input type="text" name="searchTerm" size="50" class="search-box-input" placeholder="Search the Knowledge Base.." />
-                </form>
-            </div>
-
+        <section class="main-panel">
             @RenderBody()
-
-        </div>
+        </section>
     </div>
 </div>
