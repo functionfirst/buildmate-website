@@ -59,6 +59,7 @@ p {
 .content {
     background-color: #fff;
     padding: 3em 0;
+    overflow: hidden;
 }
 
 /* navigation */
@@ -465,7 +466,10 @@ a.darker:hover {
 
 .tick { float: none; margin: 0 auto; display: block; }
 /* features */
-.features {
+/*.features {
+    display: none;
+}*/
+/*.features {
     float:left;
     width:200px;
     border-right: 1px solid #ddd;
@@ -475,9 +479,9 @@ a.darker:hover {
     -webkit-box-shadow: inset 100px 0 40px -10px #fff;
     -moz-box-shadow:    inset 100px 0 40px -10px #fff;
     box-shadow:         inset 100px 0 40px -10px #fff;
-}
+}*/
 
-.features ul {
+/*.features ul {
     list-style : none;
     padding: 50px 0 10px;
 }
@@ -500,26 +504,67 @@ a.darker:hover {
     color: #333;
     background: #fff;
     margin-right: -1px;
+}*/
+.feature {
+    position: relative;
+    min-height: 720px;
 }
 .feature-content {
-    margin-left:230px;
+    width: 440px;
+    padding-right: 30px;
 }
 
-.feature-content h1 {
+.feature-content-title {
+    padding-top: 30px;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 1.4em;
     font-weight: normal;
     padding-bottom: 20px;
+}
+
+.feature-image {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    padding-top: 40px;
+}
+
+.feature-image img {
+    border: 1px solid #555;
+    border-top: 0;
+}
+
+.feature-image:before {
+    border-radius: 4px 4px  0 0;
+    position: absolute;
+    content: "...";
+    height: 40px;
+    font-size: 49px;
+    padding: 5px;
+    color: #999;
+    line-height: 1px;
+    text-indent: 5px;
+    background-color: #555;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.feature-description {
+    font-size: 17px;
+    line-height: 30px;
+    color: #777;
+}
+
+.feature-signup {
+    margin: 3em 0;
+    text-align: center;
 }
 
 .customer-service {
     margin-right: 10px;
 }
 
-.featured {
-    font-size: 17px;
-    line-height: 30px;
-}
 /* pricing */
 .pricing-model {
     float: left;
@@ -814,6 +859,7 @@ hr {
 .blog {
     margin: 0 0 20px;
     border-bottom: 1px solid #eee;
+    width: 80%;
 }
 .blog h1 {
     font-size: 30px;
