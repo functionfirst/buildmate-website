@@ -31,6 +31,10 @@ a:hover {
     color: #333;
     color: #06448D;
 }
+
+img {
+    max-width: 100%;
+}
 p {
     margin-bottom: 18px;
 }
@@ -59,7 +63,7 @@ p {
 .content {
     background-color: #fff;
     padding: 3em 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 /* navigation */
@@ -619,11 +623,7 @@ a.darker:hover {
         border-radius:          0 0 5px 5px;
     }
 
-/*.pricing a {
-    display: block; 
-    margin: 10px auto;
-    width: 140px;
-}*/
+
 .pricing-models .price {
     font-size: 18px;
     color: #1F5790;
@@ -654,6 +654,27 @@ a.darker:hover {
     width: 306px;
     background: url(http://images.getbuildmate.com/pricing_arrow_2.png);
     text-indent: -999em;
+}
+
+
+/* new features */
+.new-feature {
+    max-width: 632px;
+    margin: 0 auto;
+}
+
+.new-feature h2 {
+    padding-top: 30px;
+    font-size: 30px;
+    line-height: 1.4em;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.new-feature p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #777;
 }
 
 
