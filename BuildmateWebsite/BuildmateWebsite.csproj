@@ -180,6 +180,8 @@
     <Content Include="Content\images\screenshots\tasks.jpg" />
     <Content Include="Content\images\screenshots\templates.jpg" />
     <Content Include="Content\images\social.png" />
+    <Content Include="Content\images\whatsnew\tutorial.png" />
+    <Content Include="Content\images\whatsnew\tutorial2.png" />
     <Content Include="Content\js\functions.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
