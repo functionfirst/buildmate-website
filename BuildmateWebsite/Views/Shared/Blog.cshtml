@@ -31,7 +31,7 @@
                     @foreach (var item in Model.RecentPosts)
                     {
                         <li>
-                            @Html.ActionLink(item.Title, "Article", "blog", new { id = item.CategoryId, Title = item.Title.ToSeoUrl() }, null)
+                            @Html.ActionLink(item.Title, "Article", "blog", new { id = item.BlogId, Title = item.Title.ToSeoUrl() }, null)
                         </li>
                     }
                 </ul>
