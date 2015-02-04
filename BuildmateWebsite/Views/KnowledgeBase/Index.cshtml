@@ -9,7 +9,7 @@
 <h2>Recent Articles</h2>
 
 <ul>
-@foreach (var item in Model.RecentArticles)
+@foreach (var item in Model.Articles)
 {
     <li>
         @Html.ActionLink(item.Title, "Article", "KnowledgeBase", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)

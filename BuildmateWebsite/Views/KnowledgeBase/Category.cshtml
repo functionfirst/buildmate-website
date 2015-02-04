@@ -10,7 +10,7 @@
 <h2>@Model.CurrentCategory.Name</h2>
 
 <ul>
-@foreach (var item in Model.ArticlesInCategory)
+@foreach (var item in Model.Articles)
 {
     <li>
         @Html.ActionLink(item.Title, "article", "KnowledgeBase", new { id = item.KnowledgeArticleId, Title = item.Title.ToSeoUrl() }, null)

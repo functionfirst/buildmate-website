@@ -15,8 +15,7 @@ namespace BuildmateWebsite.Controllers
         {
             ArticleViewData knowledgeData = new ArticleViewData();
             knowledgeData.KnowledgeCategories = knowledgeDB.KnowledgeCategories.OrderBy(c => c.Name).Where(c => c.KnowledgeArticles.Count > 0).ToList();
-            knowledgeData.PopularArticles = knowledgeDB.KnowledgeArticles.OrderByDescending(c => c.ViewCount).Take(5).ToList();
-            knowledgeData.RecentArticles = knowledgeDB.KnowledgeArticles.Where(c => c.Hidden == false).OrderByDescending(c => c.DateModified).Take(10).ToList();
+            knowledgeData.Articles = knowledgeDB.KnowledgeArticles.Where(c => c.Hidden == false).OrderByDescending(c => c.DateModified).Take(10).ToList();
 
             ViewBag.noCategoryClass = "active";
             return View(knowledgeData);
@@ -27,8 +26,7 @@ namespace BuildmateWebsite.Controllers
         {
             ArticleViewData knowledgeData = new ArticleViewData();
             knowledgeData.KnowledgeCategories = knowledgeDB.KnowledgeCategories.OrderBy(c => c.Name).Where(c => c.KnowledgeArticles.Count > 0).ToList();
-            knowledgeData.PopularArticles = knowledgeDB.KnowledgeArticles.OrderByDescending(c => c.ViewCount).Take(5).ToList();
-            knowledgeData.ArticlesInCategory = knowledgeDB.KnowledgeArticles.Where(c => c.CategoryId == id).ToList();
+            knowledgeData.Articles = knowledgeDB.KnowledgeArticles.Where(c => c.CategoryId == id).ToList();
             knowledgeData.CurrentCategory = knowledgeDB.KnowledgeCategories.Single(c => c.KnowledgeCategoryId == id);
 
             ViewBag.currentCategoryId = id;
@@ -41,7 +39,6 @@ namespace BuildmateWebsite.Controllers
             ArticleViewData knowledgeData = new ArticleViewData();
             knowledgeData.KnowledgeArticle = knowledgeDB.KnowledgeArticles.Find(id);
             knowledgeData.KnowledgeCategories = knowledgeDB.KnowledgeCategories.OrderBy(c=>c.Name).Where(c=>c.KnowledgeArticles.Count>0).ToList();
-            knowledgeData.PopularArticles = knowledgeDB.KnowledgeArticles.OrderByDescending(c => c.ViewCount).Take(5).ToList();
 
             ViewBag.currentCategoryID = knowledgeData.KnowledgeArticle.CategoryId;
             return View(knowledgeData);
@@ -56,18 +53,14 @@ namespace BuildmateWebsite.Controllers
 
             ArticleViewData searchData = new ArticleViewData();
             searchData.KnowledgeCategories = knowledgeDB.KnowledgeCategories.OrderBy(c => c.Name).Where(c => c.KnowledgeArticles.Count > 0).ToList();
-            searchData.PopularArticles = knowledgeDB.KnowledgeArticles.OrderByDescending(c => c.ViewCount).Take(5).ToList();
-            searchData.SearchArticles = knowledgeDB.KnowledgeArticles.MultiValueContainsAny(terms, s => s.Title).ToList();
+            searchData.Articles = knowledgeDB.KnowledgeArticles.MultiValueContainsAny(terms, s => s.Title).ToList();
             return View(searchData);
         }
 
         public class ArticleViewData
         {
             public List<KnowledgeCategory> KnowledgeCategories { get; set; }
-            public List<KnowledgeArticle> ArticlesInCategory { get; set; }
-            public List<KnowledgeArticle> SearchArticles { get; set; }
-            public List<KnowledgeArticle> PopularArticles { get; set; }
-            public List<KnowledgeArticle> RecentArticles { get; set; }
+            public List<KnowledgeArticle> Articles { get; set; }
             public KnowledgeArticle KnowledgeArticle { get; set; }
             public KnowledgeCategory CurrentCategory { get; set; }
         }

@@ -1011,6 +1011,10 @@ address {
     background: #f5f5f5;
 }
 
+.category-list a.active {
+    background-color: #eee;
+}
+
 section ul {
     list-style: circle;
 }
