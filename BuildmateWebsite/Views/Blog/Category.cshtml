@@ -2,8 +2,8 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = @Model.CurrentCategory.Name + " - Estimating Software Blog for builders, developers and home enthusiasts";
-    ViewBag.Keywords = @Model.CurrentCategory.Keywords;
+    ViewBag.Title = @Model.CurrentCategory.Name + " - Buildmate";
+    ViewBag.Description = @Model.CurrentCategory.Keywords;
     Layout = "~/Views/Shared/Blog.cshtml";
 }
 <h1>@Model.CurrentCategory.Name</h1>

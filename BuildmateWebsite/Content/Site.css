@@ -32,9 +32,9 @@ a:hover {
     color: #06448D;
 }
 
-img {
+/*img {
     max-width: 100%;
-}
+}*/
 p {
     margin-bottom: 18px;
 }
@@ -99,7 +99,7 @@ p {
     
 .nav a.primary:hover,
 .fixed-nav.fixed-nav .nav a.primary:hover {
-    background-color: #06448D;
+    background-color: #256ab9;
     color: #fff;
 }
 .nav a.active {
@@ -382,11 +382,11 @@ body:before {
     width: 100%;
     display: block;
 }
-.primary {
+a.primary {
     color: #fff;
     background: #2e7cd5;
 }
-.primary:hover {
+a.primary:hover {
     color: #fff;
     background: #256ab9;
 }
@@ -429,10 +429,13 @@ a.darker:hover {
 }
 
 /* features */
+.feature-block {
+    margin: 0 0 3em;
+}
 .feature-title {
     text-align: center;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 36px;
+    line-height: 42px;
     margin: 0 0 10px;
 }
 .feature-subtitle {

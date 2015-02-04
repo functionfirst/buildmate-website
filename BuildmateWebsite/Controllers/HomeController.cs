@@ -17,15 +17,15 @@ namespace BuildmateWebsite.Controllers
         }
 
         //
-        // GET: /About/
-        public ActionResult About()
+        // GET: /Company/
+        public ActionResult Company()
         {
             return View();
         }
 
         //
         // GET: /Pricing/
-        public ActionResult Pricing()
+        public ActionResult plans_and_pricing()
         {
             return View();
         }
@@ -33,13 +33,6 @@ namespace BuildmateWebsite.Controllers
         //
         // GET: /Privacy/
         public ActionResult Privacy()
-        {
-            return View();
-        }
-
-        //
-        // GET: /whats_new/
-        public ActionResult whats_new()
         {
             return View();
         }

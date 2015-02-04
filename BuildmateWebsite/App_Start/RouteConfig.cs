@@ -58,13 +58,18 @@ namespace BuildmateWebsite
                 new { controller = "KnowledgeBase", action = "Article", id = "", title = "" }
             );
 
-
-
             // Features
             routes.MapRoute(
                 "FeaturesIndex",
-                "Features",
+                "features",
                 new { controller = "Features", action = "Index", id = "", title = "" }
+            );
+
+            // Whats New
+            routes.MapRoute(
+                "WhatsNew",
+                "whats_new",
+                new { controller = "WhatsNew", action = "Index", id = "", title = "" }
             );
             // Contact
             routes.MapRoute(

@@ -1,6 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Pre-priced Resources - Estimating Software for builders, developers and home enthusiasts";
-    ViewBag.Keywords = "estimating, software, cost, projects, accuracy, labour, material, plant, resources, calculate, sign-up, cost, project, nail, builders, merchants, resources, prices, accurate, buildmate";
+    ViewBag.Title = "Pre-priced Resources - Price your projects accurately - Buildmate";
+    ViewBag.Description = "Choose from over 100,000 resources to accurately calculate the cost of your Projects. Sign up for a FREE trial!";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -8,26 +8,36 @@
     <div class="container">
         <h1>Pre-priced Resources</h1>
 
-        <p>Cost your projects with accuracy</p>
+        <p>Price your projects accurately</p>
     </div>
 </div>
 
 <div class="content">
     <div class="container">
-        @Html.Partial("_Features")
+        <!-- pre-priced resources -->
+        <div class="feature">
+            <div class="feature-content">
+                <h2 class="feature-content-title">Compare prices for thousands of Resources.</h2>
 
-        <div class="feature-content">
-            <img src="http://images.getbuildmate.com/feature2.jpg" alt="Cost your projects with accuracy using our estimating software" />
+                <div class="feature-description">
+                    <p>
+                        Choosing from over 100,000 Labour, Material and Plant resources, you'll be able to accurately calculate
+                        the cost of your Projects, right down to the last nail.
+                    </p>
 
-            <p class="featured">
-                With over 100,000 Labour, Material and Plant resources to choose from you'll be able to accurately calculate
-                the cost of your project, right down to the last nail! Did we mention we use well known Builders Merchants to
-                keep our resource prices accurate?
-            </p>
+                    <p>
+                        Not only that but if the prices don't work or your Supplier can get it cheaper, Buildmate lets you add your own prices.
+                    </p>
 
-            <p class="centeralign">
-                <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
-            </p>
+                    <p class="feature-signup">
+                        <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-image">
+                <img src="/Content/images/screenshots/resources.jpg" alt="Cost your projects with accuracy using our estimating software" />
+            </div>
         </div>
     </div>
 </div>

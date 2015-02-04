@@ -1,6 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Professional Documents - Estimating Software for builders, developers and home enthusiasts";
-    ViewBag.Keywords = "estimating, software, professional, tenders, quotations, reporting, documents, customers, sign-up, buildmate";
+    ViewBag.Title = "Professional Documents - Create professional looking tenders and quotations - Buildmate";
+    ViewBag.Description = "Use Buildmate's online estimating software to create professional looking documents in seconds. Sign up for a FREE trial!";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,21 +14,23 @@
 
 <div class="content">
     <div class="container">
+        <!-- documents -->
+        <div class="feature">
+            <div class="feature-content">
+                <h2 class="feature-content-title">Create professional looking documents.</h2>
 
-        @Html.Partial("_Features")
+                <div class="feature-description">
+                    <p>
+                        We know how time consuming creating tenders and sending out quotations can be.
+                        Using our Document creation tool you'll be able to upload your company logo and quickly create professional
+                        looking documents that you can send straight to your customers.
+                    </p>
+                </div>
+            </div>
 
-        <div class="feature-content">
-            <img src="http://images.getbuildmate.com/feature8.jpg" alt="Create professional looking tenders and quotations">
-
-            <p class="featured">
-                We know how time consuming creating tenders and sending out quotations can be.
-                With Buildmate's built in reporting system you can quickly create professional looking documents
-                that you can email straight to your customers, or print them off to send by post.
-            </p>
-
-            <p class="centeralign">
-                <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
-            </p>
+            <div class="feature-image">
+                <img src="/Content/images/screenshots/documents.jpg" alt="Create professional looking tenders and quotations" />
+            </div>
         </div>
     </div>
 </div>

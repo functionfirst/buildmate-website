@@ -1,6 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Project Templates - Estimating Software for builders, developers and home enthusiasts";
-    ViewBag.Keywords = "estimating, software, copy, project, templates, projects, sign-up, buildmate";
+    ViewBag.Title = "Project Templates - Why re-create when you can copy? - Buildmate";
+    ViewBag.Description = "Using Buildmate's online estimating software you can create projects quickly using existing templates. Sign up for a FREE trial!";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,20 +14,25 @@
 
 <div class="content">
     <div class="container">
+        <div class="feature">
+            <div class="feature-content">
+                <h2 class="feature-content-title">Building a Project using your own foundations.</h2>
 
-        @Html.Partial("_Features")
+                <div class="feature-description">
+                    <p>
+                        Using your existing Projects as a template, you can create new projects even more quickly. We've also provided a number of
+                        standard project templates so you can get started as soon as you login.
+                    </p>
 
-        <div class="feature-content">
-            <img src="http://images.getbuildmate.com/feature3.jpg" alt="Why re-create when you can copy with our construction estimating software" />
+                    <p class="feature-signup">
+                        <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
+                    </p>
+                </div>
+            </div>
 
-            <p class="featured">
-                Creating a project is even quicker when you can copy anny existing projects. As a bonus,
-                we've provided a number of common project templates so you can get up and running straight away.
-            </p>
-
-            <p class="centeralign">
-                <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
-            </p>
+            <div class="feature-image">
+                <img src="/Content/images/screenshots/templates.jpg" alt="Why re-create when you can copy with our construction estimating software" />
+            </div>
         </div>
     </div>
 </div>

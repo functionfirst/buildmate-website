@@ -1,6 +1,6 @@
 ﻿@{
-    ViewBag.Title = "Cost Analysis - Estimating Software for builders, developers and home enthusiasts";
-    ViewBag.Keywords = "estimating, software, optimise, pricing, strategy, statistical, information, projects, information, pricing, competitive, successes, monthly, weekly, statistics, , sign-up, buildmate";
+    ViewBag.Title = "Use Cost Analysis to help you optimise your pricing strategy - Buildmate";
+    ViewBag.Description = "Keep track of your project succcess and failures using our online estimating software. Sign up for a FREE trial!";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -14,19 +14,26 @@
 
 <div class="content">
     <div class="container">
-        @Html.Partial("_Features")
+        <!-- cost analysis -->
+        <div class="feature">
+            <div class="feature-content">
+                <h2 class="feature-content-title">Keep track of your Successes. And your Failures.</h2>
 
-        <div class="feature-content">
-            <img src="http://images.getbuildmate.com/feature5.jpg" alt="" />
+                <div class="feature-description">
+                    <p>
+                        Access monthly and weekly statistics for your Projects whether they were won or lost.
+                        With upto the minute statistical information you'll have everything you need to keep your pricing competitive.
+                    </p>
 
-            <p class="featured">
-                With access to upto the minute statistical information on your projects, you'll have the information you need to keep
-                your pricing competitive. Track your rate of successes <strong id="mf25">and</strong> losses with monthly and weekly statistics.
-            </p>
+                    <p class="feature-signup">
+                        <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
+                    </p>
+                </div>
+            </div>
 
-            <p class="centeralign">
-                <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it FREE</a>
-            </p>
+            <div class="feature-image">
+                <img src="/Content/images/screenshots/analysis.jpg" alt="Keep track of the success rate of your projects with monthly and weekly statistics." />
+            </div>
         </div>
     </div>
 </div>

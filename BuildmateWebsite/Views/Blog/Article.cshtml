@@ -2,10 +2,9 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = @Html.DisplayFor(model => Model.Blog.Title) + " - Estimating Software Blog for builders, developers and home enthusiasts";
-    ViewBag.Keywords = @Model.Blog.Keywords;
+    ViewBag.Title = @Html.DisplayFor(model => Model.Blog.Title) + " - Buildmate";
+    ViewBag.Description = @Model.Blog.Keywords;
     Layout = "~/Views/Shared/Blog.cshtml";
-    Page.Title = "Foo";
 }
 
     <div id="fb-root"></div>

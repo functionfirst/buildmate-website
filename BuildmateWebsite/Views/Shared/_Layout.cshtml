@@ -8,13 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title dir="ltr">@ViewBag.Title</title>
-    
-    <meta name="author" content="Alan Jenkins (alan@functionfirst.co.uk)" />
-
-	<meta name="description" content="Buildmate is the first internet based building, construction, specialist trade and services estimating application." />
-	<meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="description" content="@ViewBag.Description" />
     <meta name="viewport" content="width=device-width" />
-
     
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" rel="stylesheet">
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
@@ -22,6 +17,17 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">        window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
     <script type="text/javascript" src="/content/js/functions.js"></script>
+
+    <meta property="og:title" content="@ViewBag.Title" />
+    <meta property="og:image" content="@(Request.Url.Scheme)://@(Request.Url.Host)/Content/images/logo.png" />
+    <meta property="og:url" content="@Request.Url.OriginalString" />
+    <meta property="og:site_name" content="Buildmate" />
+    <meta property="og:description" content="Buildmate is the first online estimating software designed to help you easily create and manage your building estimates." />
+    
+    <meta name="twitter:title" content="@ViewBag.Title" />
+    <meta name="twitter:image" content="@(Request.Url.Scheme)://@(Request.Url.Host)/Content/images/logo.png" />
+    <meta name="twitter:url" content="@Request.Url.OriginalString" />
+    <meta name="twitter:card" content="Buildmate is the first online estimating software designed to help you easily create and manage your building estimates." />
 </head>
 
 <body class="@RenderSection("BodyClass", false)">
@@ -29,18 +35,16 @@
         <div class="header">
             <div class="container">
                 <h2 class="logo">
-                    <a href="/">BuildMate <span>estimating made simple</span></a>
+                    <a href="/">Buildmate <span>estimating made simple</span></a>
                 </h2>
 
                 <ul class="nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/features/">Features</a></li>
-                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/whats_new/">What's New</a></li>
+                    <li><a href="/plans_and_pricing/">Plans &amp; Pricing</a></li>
                     <li><a href="/knowledgebase/">Knowledge Base</a></li>
-                    <li><a href="https://buildmateapp.com" class="btn primary">Login</a></li>
-                    @*<li>
-                        <a href="https://buildmateapp.com/register/" class="btn primary">Try it Free</a>
-                    </li>*@
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="https://buildmateapp.com" class="btn">Login</a></li>
+                    <li><a href="https://buildmateapp.com/register/" class="btn primary">Try it Free</a></li>
                 </ul>
             </div>
         </div>
@@ -51,33 +55,51 @@
     <div class="footer">
         <div class="container">
             <div class="col4">
-                <h3 class="footer-header">Product</h3>
+                <h3 class="footer-header">Learn More</h3>
                 
                 <ul>
-                    <li><a href="/features/">Features</a></li>
-                    <li><a href="/pricing/">Pricing</a></li>
-                </ul>
-            </div>
-            <div class="col4">
-                <h3 class="footer-header">Community</h3>
-
-                <ul>
-                    <li><a href="/whats_new/">What's New</a></li>
+                    <li><a href="/whats_new/">What's New</a></li>                
+                    <li><a href="/plans_and_pricing/">Plans &amp; Pricing</a></li>
+                    
                     <li><a href="/knowledgebase/">Knowledge Base</a></li>
-                    <li><a href="/blog/">Blog</a></li>
                 </ul>
             </div>
             <div class="col4">
-                <h3 class="footer-header">Company</h3>
+                <h3 class="footer-header">Features</h3>
 
                 <ul>
-                    <li><a href="/about/">About us</a></li>
+                    <li>
+                        <a href="/features/extensive_tasks" @ViewBag.extensive_tasks>Extensive Tasks</a>
+                    </li>
+                    <li>
+                        <a href="/features/project_templates/" @ViewBag.project_templates>Project Templates</a>
+                    </li>
+                    <li>
+                        <a href="/features/cost_analysis/" @ViewBag.cost_analysis>Cost Analysis</a>
+                    </li>
+                    <li>
+                        <a href="/features/pre_priced_resources/" @ViewBag.pre_priced_resources>Pre-priced Resources</a>
+                    </li>
+                    <li>
+                        <a href="/features/customer_management/" @ViewBag.customer_management>Customer Management</a>
+                    </li>
+                    <li>
+                        <a href="/features/professional_documents/" @ViewBag.professional_documents>Professional Documents</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3 class="footer-header">About</h3>
+
+                <ul>
+                    <li><a href="/company/">Company</a></li>
+                    <li><a href="/blog/">Blog</a></li>
                     <li><a href="/contact/">Contact</a></li>
                 </ul>
 
             </div>
             <div class="col4">
-                <a href="https://buildmateapp.com/register/" class="btn btn-large secondary">Try it Free</a>
+                <a href="https://buildmateapp.com/register/" class="btn btn-large primary">Try it Free</a>
                 
                 <div class="social">
                     <a class="social-fb" target="_blank" href="http://www.facebook.com/getbuildmate/">Facebook</a>
@@ -116,16 +138,5 @@
     </script>
 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-501af5c837dcc35f" async></script>
-
-    <!-- mouseflow
-    <script type="text/javascript">
-        var _mfq = _mfq || [];
-        (function () {
-            var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
-            mf.src = "//cdn.mouseflow.com/projects/6160576e-6236-47a3-a904-ba506b9f7fb6.js";
-            document.getElementsByTagName("head")[0].appendChild(mf);
-        })();
-    </script>
-    -->
 </body>
 </html>
