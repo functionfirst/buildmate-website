@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width" />
     
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" rel="stylesheet">
-    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.less")" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">        window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
@@ -32,20 +32,28 @@
 
 <body class="@RenderSection("BodyClass", false)">
     <div class="wrapper">
-        <div class="header">
+        <div class="header" id="header">
             <div class="container">
                 <h2 class="logo">
                     <a href="/">Buildmate <span>estimating made simple</span></a>
                 </h2>
 
-                <ul class="nav">
-                    <li><a href="/whats_new/">What's New</a></li>
-                    <li><a href="/plans_and_pricing/">Plans &amp; Pricing</a></li>
-                    <li><a href="/knowledgebase/">Knowledge Base</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="https://buildmateapp.com" class="btn">Login</a></li>
-                    <li><a href="https://buildmateapp.com/register/" class="btn primary">Try it Free</a></li>
-                </ul>
+                <a href="#" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <div class="collapse navbar-collapse" id="main-navbar">
+                    <ul class="nav">
+                        <li><a href="/whats_new/">What's New</a></li>
+                        <li><a href="/plans_and_pricing/">Plans &amp; Pricing</a></li>
+                        <li><a href="/knowledgebase/">Knowledge Base</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="https://buildmateapp.com" class="btn">Login</a></li>
+                        <li><a href="https://buildmateapp.com/register/" class="btn primary">Try it Free</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     
@@ -137,6 +145,6 @@
         })();
     </script>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-501af5c837dcc35f" async></script>
+    @*<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-501af5c837dcc35f" async></script>*@
 </body>
 </html>

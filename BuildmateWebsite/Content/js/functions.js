@@ -8,4 +8,11 @@
             nav.removeClass("fixed-nav");
         }
     });
+
+    $('.navbar-toggle').on('click', toggleNav);
 });
+
+function toggleNav() {
+    $('.header').toggleClass('show-nav');
+    return false;
+}
