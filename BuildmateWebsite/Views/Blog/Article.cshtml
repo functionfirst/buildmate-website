@@ -2,9 +2,10 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = @Html.DisplayFor(model => Model.Blog.Title) + " - Buildmate";
+    ViewBag.Title = @Html.DisplayFor(model => Model.Blog.Title) + " - The Buildmate Blog";
     ViewBag.Description = @Model.Blog.Keywords;
     Layout = "~/Views/Shared/Blog.cshtml";
+    ViewBag.Header = @Model.Blog.Title;
 }
 
     <div id="fb-root"></div>
@@ -21,7 +22,7 @@
 
         <article class="blog">
             <section class="post-header">
-                <h2>@Html.DisplayFor(model => Model.Blog.Title)</h2>
+                @*<h2>@Html.DisplayFor(model => Model.Blog.Title)</h2>*@
 
                 <p class="comments"><a href="#fb-comments"><fb:comments-count href=@Request.Url.AbsoluteUri>0</fb:comments-count> Comments </a></p>
             

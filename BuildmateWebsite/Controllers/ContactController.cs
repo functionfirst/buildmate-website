@@ -38,7 +38,7 @@ namespace BuildmateWebsite.Controllers
 
                 message.Append("Message: " + contactForm.Message);
 
-                if (SendEmail("alan@functionfirst.co.uk", message))
+                if (SendEmail(contactForm.Email, message))
                 {
                     ViewBag.success = true;
                 }
@@ -59,7 +59,8 @@ namespace BuildmateWebsite.Controllers
             SmtpClient smtp = new SmtpClient();
             MailAddress from = new MailAddress(SentTo);
             StringBuilder sb = new StringBuilder();
-            msg.To.Add("alan@functionfirst.co.uk");
+            msg.To.Add("steve@buildmateapp.com");
+            msg.CC.Add("alan@buildmateapp.com");
             msg.Subject = "[Buildmate] Website Contact";
             msg.IsBodyHtml = true;
             smtp.Host = "mail.buildmateapp.com";

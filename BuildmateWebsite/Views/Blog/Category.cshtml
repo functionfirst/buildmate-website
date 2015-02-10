@@ -2,11 +2,12 @@
 @using BuildmateWebsite.Models
 
 @{
-    ViewBag.Title = @Model.CurrentCategory.Name + " - Buildmate";
+    ViewBag.Title = @Model.CurrentCategory.Name + " - The Buildmate Blog";
     ViewBag.Description = @Model.CurrentCategory.Keywords;
     Layout = "~/Views/Shared/Blog.cshtml";
+    ViewBag.Header = @Model.CurrentCategory.Name;
 }
-<h1>@Model.CurrentCategory.Name</h1>
+@*<h1>@Model.CurrentCategory.Name</h1>*@
 
 @foreach (var item in Model.BlogInCategories)
 {

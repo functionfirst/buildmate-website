@@ -184,7 +184,12 @@
     <Content Include="Content\images\whatsnew\tutorial.png" />
     <Content Include="Content\images\whatsnew\tutorial2.png" />
     <Content Include="Content\js\functions.js" />
-    <None Include="Content\Site.less" />
+    <Content Include="Content\css\nav.less" />
+    <Content Include="Content\css\hero.less" />
+    <Content Include="Content\css\feature.less" />
+    <Content Include="Content\css\blog.less" />
+    <Content Include="Content\css\knowledgebase.less" />
+    <None Include="Content\css\site.less" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />

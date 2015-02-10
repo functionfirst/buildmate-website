@@ -1,0 +1,90 @@
+﻿/* navigation */
+.nav {
+    /*float: right;*/
+    margin: 0;
+    padding: 0;
+}
+
+.nav > li {
+    display: block;
+    /*float: left;*/
+    /*margin-left: 10px;*/
+}
+.nav a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 19px;
+    padding: 10px 15px 11px;
+    border-radius: 2px;
+    color: #444;
+}
+.nav a:hover {
+    color: #207ECF;
+}
+.nav a.primary {
+    color: #fff; 
+}
+    
+.nav a.primary:hover {
+    background-color: #256ab9;
+    color: #fff;
+}
+.nav a.active {
+    color: #fff;
+    background: rgba(255,255,255,0.3);
+}
+.nav a.active:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.navbar-toggle {
+    float: right;
+    width: 22px;
+    height: 21px;
+    margin: 35px;
+}
+
+.icon-bar {
+    border-top: 2px solid #fff;
+    display:block;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.navbar-toggle:hover .icon-bar {
+    border-color: rgba(255,255,255,0.75);
+}
+
+.show-nav .icon-bar,
+.fixed-nav .icon-bar {
+    border-color: #000;
+}
+.show-nav .navbar-toggle:hover .icon-bar,
+.fixed-nav .navbar-toggle:hover .icon-bar {
+    border-color: rgba(0,0,0,0.75);
+}
+
+.navbar-collapse {
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 92px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: background .2s linear;
+}
+.show-nav .navbar-collapse {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    bottom: 0;
+}
+
+.show-nav li a {
+    color: #333;
+    border-radius: 0;
+}
