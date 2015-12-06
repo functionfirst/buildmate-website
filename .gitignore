@@ -1,8 +1,5 @@
 # User-specific files
-*.suo
-*.user
 *.userosscache
-*.sln
 *.sln.docstates
 
 
@@ -19,9 +16,4 @@
 /Backup
 BuildmateWebsite/bin/
 BuildmateWebsite/obj/
-BuildmateWebsite/Properties/
-BuildmateWebsite/BuildmateWebsite.csproj
-BuildmateWebsite/BuildmateWebsite.csproj.user
-
-BuildmateWebsite/BuildmateWebsite.csproj
 Thumbs.db
